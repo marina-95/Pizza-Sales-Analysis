@@ -4,4 +4,11 @@
 # Tabla de Contenido
 
 
-# Introdución
+# Introducción
+La pizzería Plato's Pizza necesita de un consultor BI que analice y genere un reporte sobre los datos que recopilaron en todo un año, con el fin de encontrar oportunidades para generar más ventas y trabajar de manera más eficiente.
+
+En el siguiente link se puede acceder a la base de datos: [aquí](https://www.kaggle.com/datasets/shilongzhuang/pizza-sales?datasetId=2566526&sortBy=voteCount)
+
+# Diagrama entidad - relación
+
+# Preguntas & Soluciones
