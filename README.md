@@ -205,3 +205,23 @@ from [dbo].[pizza_sales$];
 | Promedio_valor_pizza  |
 | --------------------- |
 | 16.82                 |
+
+***
+
+**5) ¿Cuáles combinaciones (tamaño y pizza) se piden más?**
+
+````sql
+select top 3 
+	pizza_size, 
+	pizza_name,
+	count(*) as Cant_Combinaciones
+from [dbo].[pizza_sales$]
+group by pizza_size, pizza_name
+order by Cant_Combinaciones desc;
+````
+#### Respuesta:
+| pizza_size | pizza_name             | Cant_Combinaciones |
+| ---------- | ---------------------- |--------------------|
+| S          | The Big Meat Pizza     | 1811               |
+| L          | The Thai Chicken Pizza | 1365               |
+| L          | The Five Cheese Pizza  | 1359               |
