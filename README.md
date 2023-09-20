@@ -225,3 +225,25 @@ order by Cant_Combinaciones desc;
 | S          | The Big Meat Pizza     | 1811               |
 | L          | The Thai Chicken Pizza | 1365               |
 | L          | The Five Cheese Pizza  | 1359               |
+
+***
+
+**6) ¿Cuántas pedidos de pizza Veggie existen en comparación con las demás?**
+
+````sql
+select pizza_category, 
+       count(*) as Cant_Pedidos,
+       count(*) * 100 / (select count(*) from [dbo].[pizza_sales$]) as Porcentaje
+from [dbo].[pizza_sales$]
+group by pizza_category
+order by Cant_pedidos desc;
+````
+#### Respuesta:
+| pizza_category | Cant_Pedidos | Porcentaje |
+| -------------- | ------------ |------------|
+| Classic        | 14579        | 29         |
+| Supreme        | 11777        | 24         |
+| Veggie         | 11449        | 23         |
+| Chicken        | 10815        | 22         |
+
+# Conclusiones
