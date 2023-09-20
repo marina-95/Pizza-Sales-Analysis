@@ -233,7 +233,7 @@ order by Cant_Combinaciones desc;
 ````sql
 select pizza_category, 
        count(*) as Cant_Pedidos,
-       count(*) * 100 / (select count(*) from [dbo].[pizza_sales$]) as Porcentaje
+       round(count(*) * 100.0 / (select count(*) from [dbo].[pizza_sales$]), 0) as Porcentaje
 from [dbo].[pizza_sales$]
 group by pizza_category
 order by Cant_pedidos desc;
@@ -241,9 +241,9 @@ order by Cant_pedidos desc;
 #### Respuesta:
 | pizza_category | Cant_Pedidos | Porcentaje |
 | -------------- | ------------ |------------|
-| Classic        | 14579        | 29         |
+| Classic        | 14579        | 30         |
 | Supreme        | 11777        | 24         |
-| Veggie         | 11449        | 23         |
+| Veggie         | 11449        | 24         |
 | Chicken        | 10815        | 22         |
 
 # Conclusiones
