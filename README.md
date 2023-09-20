@@ -65,3 +65,143 @@ order by Cant_Pedidos desc;
 | 12:00  | 2520         |
 | 13:00  | 2455         |
 | 18:00  | 2399         |
+
+***
+
+**2) ¿Cuántas pizzas se cocinan en los períodos pico?**
+
+````sql
+select top 3
+	dateadd(hour, datediff(hour, 0, order_time), 0) as Hora,
+	sum(quantity) as Cant_Pizzas
+from [dbo].[pizza_sales$]
+group by dateadd(hour, datediff(hour, 0, order_time), 0)
+order by Cant_Pizzas desc;
+````
+#### Respuesta:
+| Hora   | Cant_Pizzas  |
+| ------ | ------------ |
+| 12:00  | 6776         |
+| 13:00  | 6413         |
+| 18:00  | 5417         |
+
+De esos resultados me surgió la pregunta: **¿Cuántas pizzas se cocinan en promedio en el horario de las 12:00?**
+
+````sql
+select 
+	round(avg(Cant_Pizzas),1) as Promedio_Pizzas
+from (
+	select 
+		cast(order_date as date) as Dia,
+		dateadd(hour, datediff(hour, 0, order_time), 0) as Hora,
+		sum(quantity) as Cant_Pizzas
+	from [dbo].[pizza_sales$]
+	where datepart(hour, order_time) = 12
+	group by cast(order_date as date), dateadd(hour, datediff(hour, 0, order_time), 0)
+) as t1;
+````
+#### Respuesta:
+| Promedio_Pizzas  |
+| ---------------- |
+| 19               |
+
+_Lo mismo podría averiguar en el horario de las 13:00 y 18:00 simplemente reemplazando esos valores en el condicional "where"._
+
+***
+
+**3) ¿Cuál es la mejor y la peor venta de pizza?**
+
+- En función de pizza
+````sql
+select top 1 
+	pizza_name, 
+	round(sum(total_price),1) as Mejor_Venta_Total	
+from [dbo].[pizza_sales$]
+group by pizza_name
+order by Mejor_Venta_Total desc;
+````
+#### Respuesta:
+| pizza_name              | Mejor_Venta_Total  |
+| ----------------------- | ------------------ |
+| The Thai Chicken Pizza  | 43434.3            |
+
+````sql
+select top 1 
+	pizza_name,
+	round(sum(total_price),1) as Peor_Venta_Total	
+from [dbo].[pizza_sales$]
+group by pizza_name
+order by Peor_Venta_Total asc;
+````
+#### Respuesta:
+| pizza_name             | Peor_Venta_Total   |
+| ---------------------- | ------------------ |
+| The Brie Carrie Pizza  | 11588.5            |
+
+- En función de tamaño de pizza
+````sql
+select top 1 
+	pizza_size,
+	round(sum(total_price),1) as Mejor_Venta_Total		
+from [dbo].[pizza_sales$]
+group by pizza_size
+order by Mejor_Venta_Total desc;
+````
+#### Respuesta:
+| pizza_size  | Mejor_Venta_Total  |
+| ----------- | ------------------ |
+| L           | 375318.7           |
+
+````sql
+select top 1 
+	pizza_size,
+	round(sum(total_price),1) as Peor_Venta_Total
+from [dbo].[pizza_sales$]
+group by pizza_size
+order by Peor_Venta_Total asc;
+````
+#### Respuesta:
+| pizza_size  | Peor_Venta_Total  |
+| ----------- | ----------------- |
+| XXL         | 1006.6            |
+
+- En función del tipo de pizza
+````sql
+select top 1 
+	pizza_category,
+	round(sum(total_price), 1) as Mejor_Venta_Total	 
+from [dbo].[pizza_sales$]
+group by pizza_category
+order by Mejor_Venta_Total desc;
+````
+#### Respuesta:
+| pizza_category | Mejor_Venta_Total  |
+| -------------- | ------------------ |
+| Classic        | 220053.1           |
+
+````sql
+select top 1 
+	pizza_category,
+	round(sum(total_price), 1) as Peor_Venta_Total
+from [dbo].[pizza_sales$]
+group by pizza_category
+order by Peor_Venta_Total asc;
+````
+#### Respuesta:
+| pizza_category | Peor_Venta_Total  |
+| -------------- | ----------------- |
+| Veggie         | 193690.5          |
+
+***
+
+**4) ¿Cuál es el valor promedio de una pizza?**
+
+````sql
+select	
+	round(avg(total_price),2) as Promedio_valor_pizza
+from [dbo].[pizza_sales$];
+````
+#### Respuesta:
+| Promedio_valor_pizza  |
+| --------------------- |
+| 16.82                 |
