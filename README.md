@@ -226,25 +226,11 @@ order by Cant_Combinaciones desc;
 | L          | The Thai Chicken Pizza | 1365               |
 | L          | The Five Cheese Pizza  | 1359               |
 
-***
-
-**6) ¿Cuántas pedidos de pizza Veggie existen en comparación con las demás?**
-
-````sql
-select pizza_category, 
-       count(*) as Cant_Pedidos,
-       round(count(*) * 100.0 / (select count(*) from [dbo].[pizza_sales$]), 0) as Porcentaje
-from [dbo].[pizza_sales$]
-group by pizza_category
-order by Cant_pedidos desc;
-````
-#### Respuesta:
-| pizza_category | Cant_Pedidos | Porcentaje |
-| -------------- | ------------ |------------|
-| Classic        | 14579        | 30         |
-| Supreme        | 11777        | 24         |
-| Veggie         | 11449        | 24         |
-| Chicken        | 10815        | 22         |
-
 # Conclusiones
-- 
+- El mes con más pedidos es **Julio**.
+- El día de la semana que más se pide es el **Viernes**.
+- El horario con más pedidos es al mediodía **12:00**.
+- En total se realizaron unas **6776** pizzas en el horario pico de las 12:00, es decir, en promedio unas **19** pizzas por día.
+- Las pizzas que más ganancias dejan son las **The Thai Chicken Pizza**, el tamaño que deja más ganancia es el **L** y la categoría que más deja ganancia es la **Classic**.
+- Una pizza cuesta , en promedio, **16.82** dólares.
+- La combinación preferida de los clientes es tamaño **S** de la **The Big Meat Pizza**.
