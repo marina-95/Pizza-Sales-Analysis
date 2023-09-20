@@ -235,3 +235,5 @@ order by Cant_Combinaciones desc;
 - Las pizzas que más ganancias dejan son las **The Thai Chicken Pizza**, el tamaño que más ganancia deja es el **L** y la categoría que más ganancia deja es la **Classic**.
 - Una pizza cuesta, en promedio, **16.82** dólares.
 - La combinación preferida de los clientes es tamaño **S** de la **The Big Meat Pizza**.
+
+# Visualización
