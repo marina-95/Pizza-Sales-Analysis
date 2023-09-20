@@ -231,6 +231,6 @@ order by Cant_Combinaciones desc;
 - El día de la semana que más se pide es el **Viernes**.
 - El horario con más pedidos es al mediodía **12:00**.
 - En total se realizaron unas **6776** pizzas en el horario pico de las 12:00, es decir, en promedio unas **19** pizzas por día.
-- Las pizzas que más ganancias dejan son las **The Thai Chicken Pizza**, el tamaño que deja más ganancia es el **L** y la categoría que más deja ganancia es la **Classic**.
-- Una pizza cuesta , en promedio, **16.82** dólares.
+- Las pizzas que más ganancias dejan son las **The Thai Chicken Pizza**, el tamaño que más ganancia deja es el **L** y la categoría que más ganancia deja es la **Classic**.
+- Una pizza cuesta, en promedio, **16.82** dólares.
 - La combinación preferida de los clientes es tamaño **S** de la **The Big Meat Pizza**.
