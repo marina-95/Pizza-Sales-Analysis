@@ -14,7 +14,7 @@ En el siguiente link se puede acceder a la base de datos: [aquí](https://www.ka
 - Power BI
 
 # Diagrama entidad - relación
-![Diagrama E-R](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/61b9175a-1919-4959-8d63-617240bf3beb)
+![Sin título](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/568ef5f7-529d-42e5-93f3-0caf1cf5f768)
 
 # Preguntas & Respuestas
 **1) ¿Qué meses, días y horarios tienden a ser las más ocupados?**
