@@ -2,10 +2,10 @@
 ![logo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/8b1db89a-a7fd-4489-a936-43b5e6d2dbb6)
 
 # Tabla de Contenido
-- [Introducción](#introduccion)
+- [Introducción](#introducción)
 - [Herramientas utilizadas](#herramientas-utilizadas)
-- [Diagrama entidad - relación](#diagrama-entidad---relacion)
-- [Preguntas & Respuestas](#preguntas-y-respuestas)
+- [Diagrama entidad relación](#diagrama-entidad-relacion)
+- [Preguntas y Respuestas](#preguntas-y-respuestas)
 - [Conclusiones](#conclusiones)
 
 # Introducción
@@ -17,7 +17,7 @@ En el siguiente link se puede acceder a la base de datos: [aquí](https://www.ka
 - SQL Server
 - Power BI
 
-# Diagrama entidad - relación
+# Diagrama entidad relación
 ![Sin título](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/568ef5f7-529d-42e5-93f3-0caf1cf5f768)
 
 # Preguntas y Respuestas
