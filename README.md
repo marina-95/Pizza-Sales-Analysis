@@ -1,8 +1,12 @@
 # 🍕 Pizza Sales - Análisis
-![Red Illustration Pizza Shop Logo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/b7c7e9a4-e2f5-4224-b694-a449b2105e27)
+![logo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/8b1db89a-a7fd-4489-a936-43b5e6d2dbb6)
 
 # Tabla de Contenido
-
+- [Introducción](#Introduccion)
+- [Herramientas utilizadas](#herramientas-utilizadas)
+- [Diagrama entidad - relación](#diagrama-entidad-relacion)
+- [Preguntas & Respuestas](#preguntas-&-respuestas)
+- [Conclusiones](#conclusiones)
 
 # Introducción
 El restaurante Plato's Pizza necesita de un consultor BI que analice y genere un reporte sobre los datos que recopilaron en todo un año, con el fin de encontrar oportunidades para generar más ventas y trabajar de manera más eficiente.
