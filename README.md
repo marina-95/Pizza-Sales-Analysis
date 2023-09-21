@@ -1,7 +1,7 @@
 # 🍕 Pizza Sales - Análisis
 ![logo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/8b1db89a-a7fd-4489-a936-43b5e6d2dbb6)
 
-# Tabla de Contenido
+## Tabla de Contenido
 - [Introducción](#introducción)
 - [Herramientas utilizadas](#herramientas-utilizadas)
 - [Diagrama entidad relación](#diagrama-entidad-relación)
@@ -9,19 +9,19 @@
 - [Conclusiones](#conclusiones)
 - [Visualización](#visualización)
 
-# Introducción
+## Introducción
 El restaurante Plato's Pizza necesita de un consultor BI que analice y genere un reporte sobre los datos que recopilaron en todo un año, con el fin de encontrar oportunidades para generar más ventas y trabajar de manera más eficiente.
 
 En el siguiente link se puede acceder a la base de datos: [aquí](https://www.kaggle.com/datasets/shilongzhuang/pizza-sales?datasetId=2566526&sortBy=voteCount)
 
-# Herramientas utilizadas
+## Herramientas utilizadas
 - SQL Server
 - Power BI
 
-# Diagrama entidad relación
+## Diagrama entidad relación
 ![Sin título](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/568ef5f7-529d-42e5-93f3-0caf1cf5f768)
 
-# Preguntas y respuestas
+## Preguntas y respuestas
 **1) ¿Qué meses, días y horarios tienden a ser las más ocupados?**
 
 - Meses con más cantidad de pedidos:
@@ -232,7 +232,7 @@ order by Cant_Combinaciones desc;
 | L          | The Thai Chicken Pizza | 1365               |
 | L          | The Five Cheese Pizza  | 1359               |
 
-# Conclusiones
+## Conclusiones
 - El mes con más pedidos es **Julio**.
 - El día de la semana que más se pide es el **Viernes**.
 - El horario con más pedidos es al mediodía **12:00**.
@@ -241,4 +241,4 @@ order by Cant_Combinaciones desc;
 - Una pizza cuesta, en promedio, **16.82** dólares.
 - La combinación preferida de los clientes es tamaño **S** de la **The Big Meat Pizza**.
 
-# Visualización
+## Visualización
