@@ -7,6 +7,7 @@
 - [Diagrama entidad relación](#diagrama-entidad-relación)
 - [Preguntas y respuestas](#preguntas-y-respuestas)
 - [Conclusiones](#conclusiones)
+- [Visualización](#visualización)
 
 # Introducción
 El restaurante Plato's Pizza necesita de un consultor BI que analice y genere un reporte sobre los datos que recopilaron en todo un año, con el fin de encontrar oportunidades para generar más ventas y trabajar de manera más eficiente.
