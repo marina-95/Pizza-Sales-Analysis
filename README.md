@@ -4,8 +4,8 @@
 # Tabla de Contenido
 - [Introducción](#introducción)
 - [Herramientas utilizadas](#herramientas-utilizadas)
-- [Diagrama entidad relación](#diagrama-entidad-relacion)
-- [Preguntas y Respuestas](#preguntas-y-respuestas)
+- [Diagrama entidad relación](#diagrama-entidad-relación)
+- [Preguntas y respuestas](#preguntas-y-respuestas)
 - [Conclusiones](#conclusiones)
 
 # Introducción
@@ -20,7 +20,7 @@ En el siguiente link se puede acceder a la base de datos: [aquí](https://www.ka
 # Diagrama entidad relación
 ![Sin título](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/568ef5f7-529d-42e5-93f3-0caf1cf5f768)
 
-# Preguntas y Respuestas
+# Preguntas y respuestas
 **1) ¿Qué meses, días y horarios tienden a ser las más ocupados?**
 
 - Meses con más cantidad de pedidos:
