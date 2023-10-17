@@ -243,9 +243,9 @@ order by Cant_Combinaciones desc;
 - La combinación preferida de los clientes es tamaño **S** de la **The Big Meat Pizza**.
 
 ## Visualización
-![Dashboard 1 - nuevo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/fc679527-6a85-4922-ba51-6a18844e397d)
+![Dashboard 1](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/1d4546c8-6670-4c11-b0d1-35a83e191fc7)
 ***
-![Dashboard 2 - nuevo](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/e377c1bc-8ab1-4dd6-92ae-4a636ca2dc18)
+![Dashboard 2](https://github.com/marina-95/Pizza-Sales-Analysis/assets/144913530/22a50097-4690-46fa-b019-b0277f53445e)
 
 Nota: _Dashboard con filtro puesto es el mes de Julio_
 
